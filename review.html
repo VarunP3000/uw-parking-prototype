@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+      Review Parking | UW Commuter Parking
+    </title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script defer="" src="app.js">
+    </script>
+  </head>
+  <body data-page="review">
+    <div class="app">
+      <header class="brand">
+        UW / COMMUTER PARKING
+      </header>
+      <main id="content">
+        <div class="small muted">
+          Park / Review
+        </div>
+        <h1>
+          Check, then park.
+        </h1>
+        <section class="card">
+          <div class="between">
+            <span class="eyebrow">
+              Your session
+            </span>
+            <button class="link" data-go="park">
+              Edit
+            </button>
+          </div>
+          <h3 id="reviewLocation" style="margin-top:10px">
+            Central Plaza Garage
+          </h3>
+          <div class="small muted" id="reviewDetails">
+            BGF4821 · Washington
+            <br/>
+            2 hours · Starting now
+          </div>
+        </section>
+        <section class="card lavender">
+          <div class="between">
+            <span id="appliedCredits" style="color:var(--purple);font-weight:700">
+              500 credits applied
+            </span>
+            <strong id="appliedCreditDollars">
+              −$5.00
+            </strong>
+          </div>
+          <p class="small" id="creditsDescription">
+            Using $5.00 of your $10.00 balance.
+          </p>
+          <div class="between">
+            <span class="small" id="remainingCredits" style="color:var(--purple)">
+              500 credits will remain
+            </span>
+            <button class="link" data-action="credits">
+              Change
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <h3>
+            Price breakdown
+          </h3>
+          <div class="row">
+            <span id="reviewHours">
+              Parking · 2 hours
+            </span>
+            <strong id="reviewBase">
+              $10.00
+            </strong>
+          </div>
+          <div class="row" style="color:var(--green)">
+            <span>
+              Student discount · 20%
+            </span>
+            <strong id="reviewDiscount">
+              −$2.00
+            </strong>
+          </div>
+          <div class="row" style="color:var(--green)">
+            <span id="reviewCreditsLabel">
+              Parking credits · 500
+            </span>
+            <strong id="reviewCredits">
+              −$5.00
+            </strong>
+          </div>
+          <div class="rule">
+          </div>
+          <div class="row">
+            <span>
+              Total to pay
+            </span>
+            <strong id="reviewTotal">
+              $3.00
+            </strong>
+          </div>
+        </section>
+        <section class="card">
+          <div class="between">
+            <strong class="small" id="paymentLabel">
+              Visa •••• 4242
+            </strong>
+            <button class="link" data-action="payment">
+              Change
+            </button>
+          </div>
+          <div class="tiny muted">
+            Simulated payment method
+          </div>
+        </section>
+        <button class="btn" data-action="pay" id="payButton">
+          Pay & start parking
+        </button>
+        <p class="bottom-note">
+          Demo payment only; you will not be charged.
+        </p>
+      </main>
+      <nav aria-label="Primary navigation" class="footer" hidden="" id="footer">
+        <button data-go="overview">
+          Overview
+        </button>
+        <button data-go="park">
+          Park
+        </button>
+        <button data-go="activity">
+          Activity
+        </button>
+      </nav>
+    </div>
+  </body>
+</html>

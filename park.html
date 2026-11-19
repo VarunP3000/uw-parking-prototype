@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+      Plan Parking | UW Commuter Parking
+    </title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script defer="" src="app.js">
+    </script>
+  </head>
+  <body data-page="park">
+    <div class="app">
+      <header class="brand">
+        UW / COMMUTER PARKING
+      </header>
+      <main id="content">
+        <div class="small muted">
+          Overview / Park
+        </div>
+        <h1>
+          Plan your parking
+        </h1>
+        <p class="sub">
+          Choose your stay. See your savings upfront.
+        </p>
+        <section class="card">
+          <div class="between">
+            <div>
+              <div class="eyebrow">
+                Location
+              </div>
+              <div id="locationText" style="margin-top:6px;font-weight:700">
+                Central Plaza Garage
+              </div>
+              <div class="small muted">
+                Participating location · UW Seattle
+              </div>
+            </div>
+            <button class="link" data-action="location">
+              Change
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <div class="between">
+            <div>
+              <div class="eyebrow">
+                Vehicle
+              </div>
+              <div id="vehicleText" style="margin-top:6px;font-weight:700">
+                BGF4821 · Washington
+              </div>
+              <div class="small muted">
+                Blue Toyota Corolla (demo)
+              </div>
+            </div>
+            <button class="link" data-action="vehicle">
+              Change
+            </button>
+          </div>
+        </section>
+        <section class="card">
+          <h3>
+            How long are you staying?
+          </h3>
+          <div class="choices">
+            <button class="choice" data-duration="1">
+              1 hour
+            </button>
+            <button class="choice" data-duration="2">
+              2 hours
+            </button>
+            <button class="choice" data-duration="3">
+              3 hours
+            </button>
+          </div>
+          <div class="between">
+            <span class="small muted">
+              Or set a duration
+            </span>
+            <select aria-label="Parking duration" id="durationSelect" style="width:115px;padding:7px">
+              <option value="1">
+                1 hr
+              </option>
+              <option value="2">
+                2 hr
+              </option>
+              <option value="3">
+                3 hr
+              </option>
+              <option value="4">
+                4 hr
+              </option>
+              <option value="5">
+                5 hr
+              </option>
+              <option value="6">
+                6 hr
+              </option>
+              <option value="7">
+                7 hr
+              </option>
+              <option value="8">
+                8 hr
+              </option>
+            </select>
+          </div>
+          <p class="tiny muted">
+            Times are calculated at checkout.
+          </p>
+        </section>
+        <section class="card lavender">
+          <div class="row">
+            <span id="standardLabel">
+              Standard rate · 2 hours
+            </span>
+            <strong id="standardAmount">
+              $10.00
+            </strong>
+          </div>
+          <div class="row" style="color:var(--green)">
+            <span>
+              Student discount · 20%
+            </span>
+            <strong id="discountAmount">
+              −$2.00
+            </strong>
+          </div>
+          <div class="row">
+            <span>
+              Before credits
+            </span>
+            <strong id="beforeCredits">
+              $8.00
+            </strong>
+          </div>
+          <p class="tiny muted">
+            Apply available credits in the next step.
+          </p>
+        </section>
+        <button class="btn" data-go="review">
+          Review parking
+        </button>
+        <p class="bottom-note">
+          Reviewing does not start your parking session.
+        </p>
+      </main>
+      <nav aria-label="Primary navigation" class="footer" hidden="" id="footer">
+        <button data-go="overview">
+          Overview
+        </button>
+        <button data-go="park">
+          Park
+        </button>
+        <button data-go="activity">
+          Activity
+        </button>
+      </nav>
+    </div>
+  </body>
+</html>

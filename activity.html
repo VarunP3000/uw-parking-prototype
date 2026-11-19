@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+      Activity & Savings | UW Commuter Parking
+    </title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script defer="" src="app.js">
+    </script>
+  </head>
+  <body data-page="activity">
+    <div class="app">
+      <header class="brand">
+        UW / COMMUTER PARKING
+      </header>
+      <main id="content">
+        <div class="eyebrow">
+          Your parking, in one place
+        </div>
+        <h1>
+          Activity & savings
+        </h1>
+        <div class="between">
+          <span class="small muted">
+            November 2026
+          </span>
+          <span class="small muted">
+            This month
+          </span>
+        </div>
+        <section class="card dark">
+          <div class="eyebrow" style="color:#e5dafa">
+            Paid this month
+          </div>
+          <div class="money" id="totalPaid">
+            —
+          </div>
+          <div class="row">
+            <span>
+              Student discounts
+            </span>
+            <strong id="totalDiscount">
+              —
+            </strong>
+          </div>
+          <div class="row">
+            <span>
+              Credits redeemed
+            </span>
+            <strong id="totalCredits">
+              —
+            </strong>
+          </div>
+          <p class="small" id="visitCount">
+            —
+          </p>
+        </section>
+        <h2>
+          Recent visits
+        </h2>
+        <div id="historyList">
+        </div>
+      </main>
+      <nav aria-label="Primary navigation" class="footer" hidden="" id="footer">
+        <button data-go="overview">
+          Overview
+        </button>
+        <button data-go="park">
+          Park
+        </button>
+        <button data-go="activity">
+          Activity
+        </button>
+      </nav>
+    </div>
+  </body>
+</html>

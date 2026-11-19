@@ -1,0 +1,320 @@
+:root {
+  --purple:#4b2e83;
+  --purple-dark:#382168;
+  --lavender:#eee8f8;
+  --bg:#f5f5f5;
+  --ink:#252238;
+  --muted:#76727e;
+  --green:#28744e;
+  --border:#e6e4e9;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+  background:#211f24;
+  font-family:Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  color:var(--ink);
+}
+
+button,input,select {
+  font:inherit;
+}
+
+button {
+  cursor:pointer;
+}
+
+.app {
+  max-width:410px;
+  min-height:100dvh;
+  margin:auto;
+  background:var(--bg);
+  display:flex;
+  flex-direction:column;
+  box-shadow:0 2px 32px #0003;
+}
+
+.brand {
+  background:var(--purple);
+  color:white;
+  padding:19px 22px;
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:.09em;
+}
+
+main {
+  padding:23px 23px 28px;
+  flex:1;
+}
+
+h1 {
+  font-size:28px;
+  line-height:1.17;
+  margin:12px 0;
+  letter-spacing:-.65px;
+}
+
+h2 {
+  font-size:18px;
+  margin:0 0 12px;
+}
+
+h3 {
+  font-size:15px;
+  margin:0 0 8px;
+}
+
+p {
+  line-height:1.5;
+}
+
+.sub {
+  color:var(--muted);
+  font-size:13px;
+  margin:8px 0 20px;
+}
+
+.eyebrow {
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.05em;
+  color:var(--purple);
+  text-transform:uppercase;
+}
+
+.between {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.card {
+  background:white;
+  border-radius:15px;
+  padding:18px;
+  margin:14px 0;
+}
+
+.lavender {
+  background:var(--lavender);
+}
+
+.dark {
+  background:var(--purple);
+  color:white;
+}
+
+.greenbox {
+  background:#e5f3eb;
+  color:#205d41;
+}
+
+.small {
+  font-size:11px;
+  line-height:1.5;
+}
+
+.muted {
+  color:var(--muted);
+}
+
+.tiny {
+  font-size:10px;
+}
+
+.money {
+  font-size:34px;
+  font-weight:750;
+  letter-spacing:-.7px;
+  margin:9px 0;
+}
+
+.btn {
+  border:0;
+  background:var(--purple);
+  color:white;
+  border-radius:9px;
+  font-weight:650;
+  padding:13px 14px;
+  width:100%;
+  margin:10px 0 0;
+}
+
+.btn:hover {
+  background:var(--purple-dark);
+}
+
+.btn.secondary {
+  background:#fff;
+  color:var(--purple);
+  border:1px solid #ded9e5;
+}
+
+.btn.secondary:hover {
+  background:#f6f2fb;
+}
+
+.link {
+  background:none;
+  border:0;
+  color:var(--purple);
+  font-weight:650;
+  font-size:12px;
+  padding:0;
+}
+
+.link:hover {
+  text-decoration:underline;
+}
+
+.field {
+  margin:14px 0;
+}
+
+label {
+  display:block;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:7px;
+}
+
+input,select {
+  width:100%;
+  border:1px solid #d5d2db;
+  border-radius:8px;
+  padding:13px;
+  background:#fff;
+  color:var(--ink);
+}
+
+input:focus,select:focus {
+  outline:2px solid var(--purple);
+  outline-offset:1px;
+}
+
+.row {
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  margin:10px 0;
+  font-size:13px;
+  align-items:start;
+}
+
+.row span:last-child {
+  text-align:right;
+}
+
+.rule {
+  height:1px;
+  background:var(--border);
+  margin:15px 0;
+}
+
+.choice {
+  flex:1;
+  border:0;
+  padding:12px 2px;
+  border-radius:9px;
+  background:var(--lavender);
+  color:var(--purple);
+  font-weight:650;
+  font-size:12px;
+}
+
+.choice.selected {
+  background:var(--purple);
+  color:#fff;
+}
+
+.choices {
+  display:flex;
+  gap:7px;
+  margin:12px 0;
+}
+
+.record {
+  background:white;
+  border-radius:14px;
+  padding:16px;
+  margin:11px 0;
+}
+
+.record-title {
+  font-size:15px;
+  font-weight:700;
+  margin:6px 0;
+}
+
+.footer {
+  padding:14px 22px;
+  background:white;
+  border-top:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+}
+
+.footer button {
+  background:none;
+  border:0;
+  font-size:12px;
+  color:#898390;
+  padding:5px 7px;
+}
+
+.footer button.active {
+  color:var(--purple);
+  font-weight:800;
+}
+
+.bottom-note {
+  color:#96919c;
+  font-size:10px;
+  margin-top:22px;
+}
+
+.error {
+  background:#fff1f1;
+  color:#a22;
+  border-radius:8px;
+  padding:10px;
+  font-size:12px;
+  margin-top:10px;
+}
+
+.success {
+  color:var(--green);
+}
+
+.steps div {
+  margin:13px 0;
+  font-size:13px;
+}
+
+.steps b {
+  color:var(--purple);
+  margin-right:10px;
+}
+
+.status {
+  font-size:11px;
+  color:var(--green);
+  font-weight:700;
+}
+
+@media(min-width:850px) {
+  body {
+    padding:30px 0;
+  }
+  .app {
+    min-height:780px;
+    border-radius:4px;
+    overflow:hidden;
+  }
+}

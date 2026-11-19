@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+      Parking Receipt | UW Commuter Parking
+    </title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script defer="" src="app.js">
+    </script>
+  </head>
+  <body data-page="receipt">
+    <div class="app">
+      <header class="brand">
+        UW / COMMUTER PARKING
+      </header>
+      <main id="content">
+        <button class="link" data-go="confirmation">
+          ← Back to session
+        </button>
+        <h1>
+          Parking receipt
+        </h1>
+        <section class="card">
+          <h3 id="receiptLocation">
+            —
+          </h3>
+          <p class="small muted" id="receiptReference">
+            —
+          </p>
+          <div class="row">
+            <span>
+              Parking
+            </span>
+            <strong id="receiptBase">
+              —
+            </strong>
+          </div>
+          <div class="row">
+            <span>
+              Student discount
+            </span>
+            <strong id="receiptDiscount">
+              —
+            </strong>
+          </div>
+          <div class="row">
+            <span>
+              Credits
+            </span>
+            <strong id="receiptCredits">
+              —
+            </strong>
+          </div>
+          <div class="rule">
+          </div>
+          <div class="row">
+            <span>
+              Paid
+            </span>
+            <strong id="receiptPaid">
+              —
+            </strong>
+          </div>
+        </section>
+        <button class="btn secondary" data-go="activity">
+          Activity & savings
+        </button>
+      </main>
+      <nav aria-label="Primary navigation" class="footer" hidden="" id="footer">
+        <button data-go="overview">
+          Overview
+        </button>
+        <button data-go="park">
+          Park
+        </button>
+        <button data-go="activity">
+          Activity
+        </button>
+      </nav>
+    </div>
+  </body>
+</html>

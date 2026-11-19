@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+      Parking Confirmed | UW Commuter Parking
+    </title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script defer="" src="app.js">
+    </script>
+  </head>
+  <body data-page="confirmation">
+    <div class="app">
+      <header class="brand">
+        UW / COMMUTER PARKING
+      </header>
+      <main id="content">
+        <div class="eyebrow" style="color:var(--green)">
+          Payment confirmed · Demo
+        </div>
+        <h1>
+          You’re all parked.
+        </h1>
+        <p class="sub">
+          Your parking session is now active.
+        </p>
+        <section class="card dark">
+          <div class="eyebrow" style="color:#e5dafa">
+            Parking ends at
+          </div>
+          <div class="money" id="sessionEnds">
+            —
+          </div>
+          <div class="small" id="sessionTime">
+            —
+          </div>
+        </section>
+        <section class="card">
+          <h3 id="sessionLocation">
+            —
+          </h3>
+          <div class="small muted" id="sessionVehicle">
+            —
+          </div>
+          <div class="row">
+            <span>
+              Session reference
+            </span>
+            <strong id="sessionReference">
+              —
+            </strong>
+          </div>
+        </section>
+        <section class="card">
+          <div class="row">
+            <span id="paidMethod">
+              Paid with Visa •••• 4242
+            </span>
+            <strong id="sessionPaid">
+              —
+            </strong>
+          </div>
+          <div class="row" style="color:var(--green)">
+            <span>
+              Student discount
+            </span>
+            <strong id="sessionDiscount">
+              —
+            </strong>
+          </div>
+          <div class="row" style="color:var(--green)">
+            <span id="sessionCreditsLabel">
+              Credits used
+            </span>
+            <strong id="sessionCredits">
+              —
+            </strong>
+          </div>
+          <p class="tiny muted" id="balanceLeft">
+            —
+          </p>
+        </section>
+        <button class="btn secondary" data-go="receipt">
+          View receipt
+        </button>
+        <section class="card greenbox">
+          <strong class="small">
+            Keep an eye on the time
+          </strong>
+          <p class="small" id="sessionReminder">
+            Your session is active.
+          </p>
+        </section>
+        <button class="link" data-action="help">
+          Need help with this session? Get support
+        </button>
+      </main>
+      <nav aria-label="Primary navigation" class="footer" hidden="" id="footer">
+        <button data-go="overview">
+          Overview
+        </button>
+        <button data-go="park">
+          Park
+        </button>
+        <button data-go="activity">
+          Activity
+        </button>
+      </nav>
+    </div>
+  </body>
+</html>

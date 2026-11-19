@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+      Overview | UW Commuter Parking
+    </title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script defer="" src="app.js">
+    </script>
+  </head>
+  <body data-page="overview">
+    <div class="app">
+      <header class="brand">
+        UW / COMMUTER PARKING
+      </header>
+      <main id="content">
+        <div class="eyebrow">
+          Your student benefits
+        </div>
+        <h1>
+          Welcome back.
+        </h1>
+        <section class="card dark">
+          <div class="eyebrow" style="color:#e5dafa">
+            Saved this month
+          </div>
+          <div class="money">
+            $24.15
+          </div>
+          <div class="small">
+            $4.15 saved on your last visit
+          </div>
+        </section>
+        <section class="card">
+          <div class="between">
+            <span style="color:var(--purple)">
+              Parking credits
+            </span>
+            <strong id="creditCount" style="color:var(--purple)">
+              1,000 credits
+            </strong>
+          </div>
+          <h2 id="creditAmount" style="margin:14px 0 6px">
+            $10.00 toward parking
+          </h2>
+          <p class="small muted">
+            100 credits = $1. Apply credits when you review an eligible parking session.
+          </p>
+        </section>
+        <button class="btn" data-go="park">
+          Start parking
+        </button>
+        <section class="card">
+          <div class="between">
+            <span class="eyebrow">
+              Latest visit
+            </span>
+            <button class="link" data-go="activity">
+              View activity
+            </button>
+          </div>
+          <h3 id="latestLocation" style="margin-top:14px">
+            Central Plaza Garage
+          </h3>
+          <div class="small muted" id="latestDetails">
+            Nov 12 · 2 hours · Vehicle BGF4821
+          </div>
+          <p class="small success">
+            <span id="latestPaid">
+              Paid $5.85
+            </span>
+            <span id="latestSaved" style="float:right">
+              Saved $4.15
+            </span>
+          </p>
+        </section>
+        <p class="bottom-note">
+          Student rates apply at participating locations. Your price is shown before you confirm.
+        </p>
+      </main>
+      <nav aria-label="Primary navigation" class="footer" hidden="" id="footer">
+        <button data-go="overview">
+          Overview
+        </button>
+        <button data-go="park">
+          Park
+        </button>
+        <button data-go="activity">
+          Activity
+        </button>
+      </nav>
+    </div>
+  </body>
+</html>
